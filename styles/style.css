@@ -1,11 +1,14 @@
 @import url(./reset.css);
 @import url(./fonts.css);
+@import url(./swiper.css);
 
 :root {
   --mainFont: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   --bg: #eff0f5;
+  --bgHover: #ffffffdd;
   --black: #131624;
+  --blackHover: #23283f;
   --green: #5e8d00;
   --greenHover: #87b923;
   --white: #f9faff;
@@ -964,6 +967,10 @@ section:not(:last-child) {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 0.13s;
+}
+.price-section__table-row:hover {
+  background-color: var(--bgHover);
 }
 .price-section__table-row-heading {
   font-family: var(--mainFont);
@@ -1115,4 +1122,489 @@ section:not(:last-child) {
 .req-section__btn--blue:active,
 .req-section__btn--green:active {
   transform: translateY(2px);
+}
+
+.docs-section {
+  padding: 120px 0px;
+  background: #dbdce1;
+}
+
+.docs-section__wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.docs-section__description {
+  margin: 10px 0px 40px;
+  max-width: 598px;
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: var([--black]);
+}
+.docs-card-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(194px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(377px, 1fr));
+  gap: 30px;
+}
+
+.docs-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 40px;
+  background-image: url(../assets/img/bg/price-card-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100% 110px;
+  background-color: var(--white);
+  border-bottom: 8px solid var(--black);
+}
+
+.docs-card__icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px 64px;
+  background-color: var(--white);
+}
+.docs-card__heading {
+  min-height: 90px;
+  max-width: 100%;
+  margin-bottom: 15px;
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: var(--black);
+}
+.docs-card__description {
+  max-width: 100%;
+  min-height: 84px;
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 132%;
+  color: var(--black);
+  color: #131624;
+}
+.docs-card__icon--safety-icon {
+  background-image: url(../assets/icons/price-card-icon1.svg);
+}
+.docs-card__icon--time-icon {
+  background-image: url(../assets/icons/price-card-icon2.svg);
+}
+.docs-card__icon--guarantee-icon {
+  background-image: url(../assets/icons/price-card-icon3.svg);
+}
+.docs-card__icon--price-icon {
+  background-image: url(../assets/icons/price-card-icon4.svg);
+}
+
+.owner-section {
+}
+
+.owner-section__wrapper {
+  padding-bottom: 120px;
+  gap: 30px;
+  align-items: flex-end;
+}
+.owner-section__bg-holder {
+  width: 100%;
+  max-width: 470px;
+}
+.owner-section__bg {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.owner-section__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.owner-section__description {
+  margin: 10px 0px 40px;
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.owner-section__light-description {
+  font-family: var(--mainFont);
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--black);
+}
+.owner-section__info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #dbdce1;
+}
+.owner-section__col {
+  padding: 20px;
+}
+.owner-section__col-heading {
+  margin-bottom: 4px;
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--black);
+  line-height: 130%;
+}
+.owner-section__col-link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: var(--mainFont);
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.question-section {
+  padding: 120px 0px;
+  background-color: var(--black);
+}
+
+.question-section__wrapper {
+  gap: 30px;
+}
+
+.question-section__content {
+  width: 100%;
+  max-width: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.question-section__description {
+  margin: 10px 0px 40px;
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.question-section__accordion-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+.question-section__accordion-item {
+  width: 100%;
+  height: 100vh;
+  max-height: 86px;
+  padding: 30px 20px;
+  background: var(--black);
+  border-bottom: 2px solid #3b3e4c;
+  transition: 0.13s;
+}
+
+.question-section__accordion-tab {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.question-section__accordion-item:hover {
+  background-color: var(--blackHover);
+  cursor: pointer;
+}
+
+.question-section__accordion-tab-heading {
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--white);
+}
+.question-section__accordion-tab-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/icons/chevron-down-icon.svg);
+  background-size: contain;
+  transition: 0.13s;
+}
+.question-section__accordion-hidden-content {
+  width: 100%;
+  height: 100%;
+  max-height: 0;
+  transition: 0.13s;
+  overflow: hidden;
+}
+.question-section__accordion-hidden-text {
+  min-height: 100px;
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 132%;
+  color: var(--white);
+}
+
+.question-section__bg-holder {
+  width: 100%;
+}
+.question-section__bg {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.question-section__accordion-item--opened {
+  max-height: 202px;
+  background: #2d3348;
+  border-bottom: 2px solid var(--darkRed);
+}
+
+.question-section__accordion-item--opened .question-section__accordion-hidden-content {
+  max-height: 100%;
+  margin-top: 16px;
+}
+
+.question-section__accordion-item--opened .question-section__accordion-tab-icon {
+  transform: rotate(180deg);
+}
+
+.reviews-section {
+  padding-bottom: 120px;
+}
+
+.reviews-section__wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+.subheading {
+}
+.reviews-section__description {
+  max-width: 100%;
+  margin: 10px 0px 24px;
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.reviews-section__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.review-section__swiper {
+}
+.review {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.review-profile {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-profile__avatar {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.review-profile__name {
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: var(--black);
+}
+.review-profile__car {
+  padding-left: 32px;
+  font-family: var(--mainFont);
+  background-image: url(../assets/icons/car-icon.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 24px 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 132%;
+  color: #3d4d71;
+}
+.review__info {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.review__rating {
+  display: flex;
+  align-items: center;
+}
+.review__rating-star {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(../assets/icons/star-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.review__timestamp {
+  display: inline-block;
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 132%;
+  color: #3d4d71;
+}
+.review__text {
+  margin-bottom: 39px;
+  min-height: 187px;
+  max-width: 100%;
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 132%;
+  /* or 21px */
+
+  /* black/900 */
+
+  color: var(--black);
+}
+.review__menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.review__menu-btn {
+  padding: 17px 40px;
+  background-color: var(--blue);
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--white);
+  border: 2px solid #004ea7;
+  transition: 0.13s;
+}
+.review__menu-btn:hover {
+  background-color: var(--blueHover);
+  border-color: var(--blueHover);
+}
+
+.review__menu-btn:active {
+  transform: translateY(2px);
+}
+
+.review__menu-btn--outline {
+  border: 2px solid #004ea7;
+  background-color: transparent;
+  color: var(--blue);
+}
+
+.review__menu-btn--outline:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+
+  color: var(--white);
+}
+.reviews-section__swiper-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.reviews-section__example {
+  width: 570px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.review-section__example-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews-section__example-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.review-section__example-price {
+  position: absolute;
+  padding: 8px 12px;
+  left: 20px;
+  top: 20px;
+  background-color: var(--darkRed);
+  z-index: 2;
+  font-family: var(--mainFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 132%;
+  text-align: center;
+  color: var(--white);
 }
