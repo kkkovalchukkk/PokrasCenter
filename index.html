@@ -10,6 +10,60 @@
 </head>
 
 <body>
+  <div class="popup-window popup-window--hidden" id="popup">
+    <div class="popup-window__popup">
+      <button class="popup-window__close-popup-btn"></button>
+      <img src="./assets/img/popup-img.jpeg" alt="" class="popup-window__img">
+      <div class="popup-window__popup-content">
+        <h2 class="popup-window__popup-heading">Задайте нам вопрос</h2>
+        <p class="popup-window__popup-description">
+          Оставьте вашу заявку и мы перезвоним вам как можно быстрее
+        </p>
+        <form class="footer-mail-form popup-window__mail-form">
+          <fieldset class="footer-mail-form__fieldset">
+            <input required type="text" placeholder="Представьтесь пожалуйста" class="footer-mail-form__input">
+          </fieldset>
+          <fieldset class="footer-mail-form__fieldset">
+            <input required type="tel" value="+7" placeholder="999-999-99-99"
+              class="phone footer-mail-form__input footer-mail-form__input--phone">
+          </fieldset>
+          <fieldses class="footer-mail-form__fieldset">
+            <textarea placeholder="Опишите суть вашего вопроса" name="review" id=""
+              class="footer-mail-form__textarea"></textarea>
+          </fieldses>
+          <button type="submit" class="footer-mailn-form__submit-btn">Оставить заявку на звонок</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup-window popup-window--hidden" id="popup-case">
+    <div class="popup-window__popup popup-window__popup--case">
+      <button class="popup-window__close-popup-btn"></button>
+      <div class="popup-window__popup-images">
+        До:
+        <img src="./assets/img/service-card-img.jpg" alt=""
+          class="popup-window__popup-img popup-window__popup-img--before">
+        После:
+        <img src="./assets/img/service-card-img.jpg" alt=""
+          class="popup-window__popup-img popup-window__popup-img--after">
+      </div>
+      <div class="popup-window__popup-body">
+        <h2 class="popup-window__popup-heading">BMW после ДТП</h2>
+        <p class="popup-window__popup-description">
+          Произведён ремонт и окрас алюминиевого капота с восстановлением рёбер жесткости, ремонт и окрас переднего
+          бампера, окрас
+          решетки радиатора. Так же выполнен ремонт корпуса и кронштейнов передней правой фары.
+        </p>
+        <p class="popup-window__popup-description">
+          Стоимость ремонта Вашего автомобиля будет зависеть от многих факторов - степени повреждения, типа краски,
+          площади детали
+          и т.д.
+        </p>
+
+        <button type="button" class="footer-mailn-form__submit-btn">Оставить заявку на звонок</button>
+      </div>
+    </div>
+  </div>
   <header class="header">
     <div class="wrapper header__wrapper">
       <a href="#" class="logo-link header__logo-link">
@@ -420,7 +474,221 @@
         <p class="work-section__description">
           более 100 выполненных кузовных ремонтов
         </p>
-        <form class="work-form work-section__form">
+        <div class="work-card-list work-section__card-list">
+          <div class="work-card work-card-list__card">
+            <img src="./assets/img/service-card-img.jpg" alt="" class="work-card__img">
+            <div class="work-card__body">
+              <h4 class="work-card__heading">
+                BMW после ДТП
+              </h4>
+              <div class="work-card__rows">
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Марка автомобиля:
+                  </span>
+                  <span class="work-card__row-value">
+                    BMW
+                  </span>
+                </div>
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Что сделали:
+                  </span>
+                  <p class="work-card__row-value">
+                    Ремонт и окрас капота, переднего бампера, решетки радиатора, ремонт фары передней правой
+                  </p>
+                </div>
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Срок:
+                  </span>
+                  <p class="work-card__row-value">
+                    7 дней
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="work-card__btn">Больше фото и описания</button>
+          </div>
+          <div class="work-card work-card-list__card">
+            <img src="./assets/img/service-card-img.jpg" alt="" class="work-card__img">
+            <div class="work-card__body">
+              <h4 class="work-card__heading">
+                BMW после ДТП
+              </h4>
+              <div class="work-card__rows">
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Марка автомобиля:
+                  </span>
+                  <span class="work-card__row-value">
+                    BMW
+                  </span>
+                </div>
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Что сделали:
+                  </span>
+                  <p class="work-card__row-value">
+                    Ремонт и окрас капота, переднего бампера, решетки радиатора, ремонт фары передней правой
+                  </p>
+                </div>
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Срок:
+                  </span>
+                  <p class="work-card__row-value">
+                    7 дней
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="work-card__btn">Больше фото и описания</button>
+          </div>
+          <div class="work-card work-card-list__card">
+            <img src="./assets/img/service-card-img.jpg" alt="" class="work-card__img">
+            <div class="work-card__body">
+              <h4 class="work-card__heading">
+                BMW после ДТП
+              </h4>
+              <div class="work-card__rows">
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Марка автомобиля:
+                  </span>
+                  <span class="work-card__row-value">
+                    BMW
+                  </span>
+                </div>
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Что сделали:
+                  </span>
+                  <p class="work-card__row-value">
+                    Ремонт и окрас капота, переднего бампера, решетки радиатора, ремонт фары передней правой
+                  </p>
+                </div>
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Срок:
+                  </span>
+                  <p class="work-card__row-value">
+                    7 дней
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="work-card__btn">Больше фото и описания</button>
+          </div>
+          <div class="work-card work-card-list__card">
+            <img src="./assets/img/service-card-img.jpg" alt="" class="work-card__img">
+            <div class="work-card__body">
+              <h4 class="work-card__heading">
+                BMW после ДТП
+              </h4>
+              <div class="work-card__rows">
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Марка автомобиля:
+                  </span>
+                  <span class="work-card__row-value">
+                    BMW
+                  </span>
+                </div>
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Что сделали:
+                  </span>
+                  <p class="work-card__row-value">
+                    Ремонт и окрас капота, переднего бампера, решетки радиатора, ремонт фары передней правой
+                  </p>
+                </div>
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Срок:
+                  </span>
+                  <p class="work-card__row-value">
+                    7 дней
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="work-card__btn">Больше фото и описания</button>
+          </div>
+          <div class="work-card work-card-list__card">
+            <img src="./assets/img/service-card-img.jpg" alt="" class="work-card__img">
+            <div class="work-card__body">
+              <h4 class="work-card__heading">
+                BMW после ДТП
+              </h4>
+              <div class="work-card__rows">
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Марка автомобиля:
+                  </span>
+                  <span class="work-card__row-value">
+                    BMW
+                  </span>
+                </div>
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Что сделали:
+                  </span>
+                  <p class="work-card__row-value">
+                    Ремонт и окрас капота, переднего бампера, решетки радиатора, ремонт фары передней правой
+                  </p>
+                </div>
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Срок:
+                  </span>
+                  <p class="work-card__row-value">
+                    7 дней
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="work-card__btn">Больше фото и описания</button>
+          </div>
+
+          <div class="work-card work-card-list__card">
+            <img src="./assets/img/service-card-img.jpg" alt="" class="work-card__img">
+            <div class="work-card__body">
+              <h4 class="work-card__heading">
+                BMW после ДТП
+              </h4>
+              <div class="work-card__rows">
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Марка автомобиля:
+                  </span>
+                  <span class="work-card__row-value">
+                    BMW
+                  </span>
+                </div>
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Что сделали:
+                  </span>
+                  <p class="work-card__row-value">
+                    Ремонт и окрас капота, переднего бампера, решетки радиатора, ремонт фары передней правой
+                  </p>
+                </div>
+                <div class="work-card__row">
+                  <span class="work-card__row-heading">
+                    Срок:
+                  </span>
+                  <p class="work-card__row-value">
+                    7 дней
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="work-card__btn">Больше фото и описания</button>
+          </div>
+
+        </div>
+        <!-- <form class="work-form work-section__form">
           <fieldset class="work-form-menu work-form__menu">
             <label class="work-form-menu__label">
               <input type="radio" name="model" checked value="bmw 3g 20j" class="work-form__radio-input">
@@ -512,7 +780,7 @@
 
             </div>
           </div>
-        </form>
+        </form> -->
       </div>
     </section>
     <section class="price-section">
@@ -749,6 +1017,35 @@
                     </div>
                   </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="reviews-section__example">
+                    <div class="review-section__example-wrapper">
+                      <span class="review-section__example-price">До ремонта</span>
+                      <img src="./assets/img/img-before.jpg" alt=""
+                        class="reviews-section__example-img reviews-section__example-img--before">
+                    </div>
+                    <div class="review-section__example-wrapper">
+                      <span class="review-section__example-price">После ремонта</span>
+                      <img src="./assets/img/img-before.jpg" alt=""
+                        class="reviews-section__example-img reviews-section__example-img--after">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews-section__example">
+                    <div class="review-section__example-wrapper">
+                      <span class="review-section__example-price">До ремонта</span>
+                      <img src="./assets/img/img-before.jpg" alt=""
+                        class="reviews-section__example-img reviews-section__example-img--before">
+                    </div>
+                    <div class="review-section__example-wrapper">
+                      <span class="review-section__example-price">После ремонта</span>
+                      <img src="./assets/img/img-before.jpg" alt=""
+                        class="reviews-section__example-img reviews-section__example-img--after">
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
             <div class="reviews-section__swiper-menu">
@@ -759,7 +1056,7 @@
                 </svg>
 
               </button>
-              <div class="review-section__swiper-pagination"></div>
+              <div class="swiper-pagination review-section__swiper-pagination"></div>
               <button type="button" class="reviews-section__swiper-next-btn">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 24L20 16L12 8" stroke="#131624" stroke-width="2" stroke-linecap="round"
@@ -806,9 +1103,91 @@
         </div>
       </div>
     </section>
+    <section class="map-section">
+      <iframe class="map-section__map"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A44c6986c8a29a4b71efcb47b0ac5818ab86328f2ad80888a68b0df67ee853bf4&amp;source=constructor"
+        width="100%" height="600" frameborder="0"></iframe>
+      <div class="wrapper map-section__wrapper">
+        <div class="map-section-window map-section__window">
+          <div class="map-section-window__row map-section-window__row--tel">
+            <div class="map-section-window__row-heading">Телефон:</div>
+            <a href="tel:+73433845548" class="map-section-window__row-link">+7(343) 384-55-48</a>
+          </div>
+          <div class="map-section-window__row map-section-window__row--address">
+            <div class="map-section-window__row-heading">Адрес:</div>
+            <p class="map-section-window__row-text">
+              г.Екатеринбург, ул. Новая, метро Красногвардейская
+            </p>
+          </div>
+          <div class="map-section-window__row map-section-window__row--time">
+            <div class="map-section-window__row-heading">Часы работы</div>
+            <time class="map-section-window__row-time">
+              Ежедневно с 9:00 до 21:00
+            </time>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="top-footer footer__top-footer">
+      <div class="wrapper top-footer__wrapper">
+        <div class="top-footer__col">
+          <a href="#" class="logo-link top-footer__logo-link">
+            <div class="logo-link__logo">
+              <svg width="240" height="41">
+                <use xlink:href="./assets/img/logo.svg#logo"></use>
+              </svg>
+            </div>
+          </a>
+          <h6 class="top-footer__col-heading">
+            Контакты
+          </h6>
+          <div class="top-footer__rows">
+            <div class="top-footer__row top-footer__row--time">
+              <div class="top-footer__row-heading">Часы работы:</div>
+              <time class="top-footer__row-time">Ежедневно с 9:00 до 21:00</time>
+            </div>
+            <div class="top-footer__row top-footer__row--phone">
+              <div class="top-footer__row-heading">Телефон:</div>
+              <a href="tel:+73433845548" class="top-footer__row-link">+7(343) 384-55-48</a>
+            </div>
+            <div class="top-footer__row top-footer__row--address">
+              <div class="top-footer__row-heading">Адрес:</div>
+              <p class="top-footer__row-text">г.Екатеринбург, ул. Новая, метро Красногвардейская</p>
+            </div>
+          </div>
+        </div>
+        <div class="top-footer__col">
+          <h6 class="top-footer__col-heading">Оставьте вашу заявку</h6>
+          <form class="footer-mail-form top-footer__mail-form">
+            <fieldset class="footer-mail-form__fieldset">
+              <input required type="text" placeholder="Представьтесь пожалуйста" class="footer-mail-form__input">
+            </fieldset>
+            <fieldset class="footer-mail-form__fieldset">
+              <input required type="tel" value="+7" placeholder="999-999-99-99"
+                class="phone footer-mail-form__input footer-mail-form__input--phone">
+            </fieldset>
+            <button type="submit" class="footer-mailn-form__submit-btn">Оставить заявку на звонок</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer footer__bottom-footer">
+      <p class="bottom-footer__copyrights">
+        © Company 2022
+      </p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <script src="./scripts/swiper.min.js"></script>
   <script src="./scripts/accordion.js"></script>
+  <script src="./scripts/swiper.js"></script>
+  <script src="./scripts/jquery.mask.js"></script>
+  <script src="./scripts/mask.js"></script>
+  <script src="./scripts/popup.js"></script>
 </body>
 
 </html>
