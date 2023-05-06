@@ -82,7 +82,7 @@
           <div class="header__menu-item-title">Телефон:</div>
           <a href="tel:+73433845548" class="header__menu-item-text header__menu-item-tel-link">+7(343) 384-55-48</a>
         </div>
-        <button class="header__menu-item-btn">заказать звонок</button>
+        <button class="header__menu-item-btn" data-caption="Задайте нам вопроc">заказать звонок</button>
       </div>
     </div>
   </header>
@@ -105,7 +105,8 @@
           <p class="promo-section__description">
             Диллерское качество, только на 40% дешевле за счет уникальной технологии покраски
           </p>
-          <a href="#" class="promo-section__btn">узнать стоимость кузовного ремонта </a>
+          <a href="#" class="promo-section__btn" data-caption="узнать стоимость кузовного ремонта">узнать стоимость
+            кузовного ремонта </a>
         </div>
         <div class="promo-block-list">
           <div class="promo-block promo-block-list__promo-block promo-block--goal">
@@ -373,7 +374,7 @@
               <p class="service-list-card__text">
                 Покраска производится за 1 день
               </p>
-              <a href="#" class="service-list-card__link">
+              <a href="#" data-caption="Локальная покраска деталей" class="service-list-card__link">
                 узнать больше
               </a>
             </div>
@@ -390,7 +391,7 @@
               <p class="service-list-card__text">
                 Восстанавливаем детали, которые идут под замену
               </p>
-              <a href="#" class="service-list-card__link">
+              <a href="#" data-caption="Геометрия деталей кузова" class="service-list-card__link">
                 узнать больше
               </a>
             </div>
@@ -407,7 +408,7 @@
               <p class="service-list-card__text">
                 Восстанавливаем текстуру пластика, бампера путём спайки пластика
               </p>
-              <a href="#" class="service-list-card__link">
+              <a href="#" data-caption="Ремонт пластика, бампера и покраска" class="service-list-card__link">
                 узнать больше
               </a>
             </div>
@@ -424,7 +425,7 @@
               <p class="service-list-card__text">
                 Полная покраска детали или в переход
               </p>
-              <a href="#" class="service-list-card__link">
+              <a href="#" data-caption="Покраска деталей" class="service-list-card__link">
                 узнать больше
               </a>
             </div>
@@ -441,7 +442,7 @@
               <p class="service-list-card__text">
                 Путём механической полировки кузова
               </p>
-              <a href="#" class="service-list-card__link">
+              <a href="#" data-caption="Устранение царапин" class="service-list-card__link">
                 узнать больше
               </a>
             </div>
@@ -458,7 +459,7 @@
               <p class="service-list-card__text">
                 Восстанавливаем геометрию кузова на стапеле
               </p>
-              <a href="#" class="service-list-card__link">
+              <a href="#" data-caption="Геометрия кузова" class="service-list-card__link">
                 узнать больше
               </a>
             </div>
@@ -798,29 +799,82 @@
               <button type="button" class="price-section__tab">кузовной ремонт</button>
             </div>
             <div class="price-section__table">
-              <div class="price-section__table-row">
-                <h5 class="price-section__table-row-heading">Элемент</h5>
-                <h5 class="price-section__table-row-heading">Цена</h5>
+              <div class="price-section__table-rows price-section__table-rows--position-active">
+                <div class="price-section__table-row">
+                  <h5 class="price-section__table-row-heading">Элемент</h5>
+                  <h5 class="price-section__table-row-heading">Цена</h5>
+                </div>
+                <div class="price-section__table-row">
+                  <h6 class="price-section__table-row-subheading">Капот</h6>
+                  <span class="price-section__table-row-price">от <span
+                      class="price-section__table-row-price-value">9000</span>₽</span>
+                </div>
+                <div class="price-section__table-row">
+                  <h6 class="price-section__table-row-subheading">Крыло переднее</h6>
+                  <span class="price-section__table-row-price">от <span
+                      class="price-section__table-row-price-value">7000</span>₽</span>
+                </div>
+                <div class="price-section__table-row">
+                  <h6 class="price-section__table-row-subheading">Дверь, крыло заднее, крышка багажника, бампер</h6>
+                  <span class="price-section__table-row-price">от <span
+                      class="price-section__table-row-price-value">7000</span>₽</span>
+                </div>
+                <div class="price-section__table-row">
+                  <h6 class="price-section__table-row-subheading">Порог накладка</h6>
+                  <span class="price-section__table-row-price">от <span
+                      class="price-section__table-row-price-value">3500</span>₽</span>
+                </div>
+                <div class="price-section__table-row">
+                  <h6 class="price-section__table-row-subheading">Порог накладка</h6>
+                  <span class="price-section__table-row-price">от <span
+                      class="price-section__table-row-price-value">3500</span>₽</span>
+                </div>
+                <div class="price-section__table-row">
+                  <h6 class="price-section__table-row-subheading">Порог накладка</h6>
+                  <span class="price-section__table-row-price">от <span
+                      class="price-section__table-row-price-value">3500</span>₽</span>
+                </div>
+                <div class="price-section__table-row">
+                  <h6 class="price-section__table-row-subheading">Порог накладка</h6>
+                  <span class="price-section__table-row-price">от <span
+                      class="price-section__table-row-price-value">3500</span>₽</span>
+                </div>
               </div>
-              <div class="price-section__table-row">
-                <h6 class="price-section__table-row-subheading">Капот</h6>
-                <span class="price-section__table-row-price">от <span
-                    class="price-section__table-row-price-value">9000</span>₽</span>
-              </div>
-              <div class="price-section__table-row">
-                <h6 class="price-section__table-row-subheading">Крыло переднее</h6>
-                <span class="price-section__table-row-price">от <span
-                    class="price-section__table-row-price-value">7000</span>₽</span>
-              </div>
-              <div class="price-section__table-row">
-                <h6 class="price-section__table-row-subheading">Дверь, крыло заднее, крышка багажника, бампер</h6>
-                <span class="price-section__table-row-price">от <span
-                    class="price-section__table-row-price-value">7000</span>₽</span>
-              </div>
-              <div class="price-section__table-row">
-                <h6 class="price-section__table-row-subheading">Порог накладка</h6>
-                <span class="price-section__table-row-price">от <span
-                    class="price-section__table-row-price-value">3500</span>₽</span>
+              <div class="price-section__table-rows">
+                <div class="price-section__table-row">
+                  <h5 class="price-section__table-row-heading">Элемент</h5>
+                  <h5 class="price-section__table-row-heading">Цена</h5>
+                </div>
+                <div class="price-section__table-row">
+                  <h6 class="price-section__table-row-subheading">Капот</h6>
+                  <span class="price-section__table-row-price">от <span
+                      class="price-section__table-row-price-value">9000</span>₽</span>
+                </div>
+                <div class="price-section__table-row">
+                  <h6 class="price-section__table-row-subheading">Капот</h6>
+                  <span class="price-section__table-row-price">от <span
+                      class="price-section__table-row-price-value">9000</span>₽</span>
+                </div>
+                <div class="price-section__table-row">
+                  <h6 class="price-section__table-row-subheading">Капот</h6>
+                  <span class="price-section__table-row-price">от <span
+                      class="price-section__table-row-price-value">9000</span>₽</span>
+                </div>
+                <div class="price-section__table-row">
+                  <h6 class="price-section__table-row-subheading">Крыло переднее</h6>
+                  <span class="price-section__table-row-price">от <span
+                      class="price-section__table-row-price-value">7000</span>₽</span>
+                </div>
+                <div class="price-section__table-row">
+                  <h6 class="price-section__table-row-subheading">Дверь, крыло заднее, крышка багажника, бампер</h6>
+                  <span class="price-section__table-row-price">от <span
+                      class="price-section__table-row-price-value">7000</span>₽</span>
+                </div>
+                <div class="price-section__table-row">
+                  <h6 class="price-section__table-row-subheading">Порог накладка</h6>
+                  <span class="price-section__table-row-price">от <span
+                      class="price-section__table-row-price-value">3500</span>₽</span>
+                </div>
               </div>
             </div>
             <button class="price-section__table-more-btn">показать ещё</button>
@@ -999,107 +1053,351 @@
         <p class="reviews-section__description">
           нам доверяют свои машины
         </p>
-        <div class="reviews-section__content">
-          <div class="reviews-section__swiper-wrapper">
-            <div class="swiper review-section__swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="reviews-section__example">
-                    <div class="review-section__example-wrapper">
-                      <span class="review-section__example-price">До ремонта</span>
-                      <img src="./assets/img/img-before.jpg" alt=""
-                        class="reviews-section__example-img reviews-section__example-img--before">
-                    </div>
-                    <div class="review-section__example-wrapper">
-                      <span class="review-section__example-price">После ремонта</span>
-                      <img src="./assets/img/img-before.jpg" alt=""
-                        class="reviews-section__example-img reviews-section__example-img--after">
-                    </div>
+        <div class="swiper review-section__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews-section__content">
+                <div class="reviews-section__example">
+                  <div class="review-section__example-wrapper">
+                    <span class="review-section__example-price">До ремонта</span>
+                    <img src="./assets/img/img-before.jpg" alt=""
+                      class="reviews-section__example-img reviews-section__example-img--before">
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="reviews-section__example">
-                    <div class="review-section__example-wrapper">
-                      <span class="review-section__example-price">До ремонта</span>
-                      <img src="./assets/img/img-before.jpg" alt=""
-                        class="reviews-section__example-img reviews-section__example-img--before">
-                    </div>
-                    <div class="review-section__example-wrapper">
-                      <span class="review-section__example-price">После ремонта</span>
-                      <img src="./assets/img/img-before.jpg" alt=""
-                        class="reviews-section__example-img reviews-section__example-img--after">
-                    </div>
+                  <div class="review-section__example-wrapper">
+                    <span class="review-section__example-price">После ремонта</span>
+                    <img src="./assets/img/img-before.jpg" alt=""
+                      class="reviews-section__example-img reviews-section__example-img--after">
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="reviews-section__example">
-                    <div class="review-section__example-wrapper">
-                      <span class="review-section__example-price">До ремонта</span>
-                      <img src="./assets/img/img-before.jpg" alt=""
-                        class="reviews-section__example-img reviews-section__example-img--before">
-                    </div>
-                    <div class="review-section__example-wrapper">
-                      <span class="review-section__example-price">После ремонта</span>
-                      <img src="./assets/img/img-before.jpg" alt=""
-                        class="reviews-section__example-img reviews-section__example-img--after">
-                    </div>
-                  </div>
-                </div>
 
+
+
+                </div>
+                <div class="review review-section__review">
+                  <div class="review-profile review__profile">
+                    <img src="./assets/img/review-avatar.jpg" alt="" class="review-profile__avatar">
+                    <div class="review-profile__body">
+                      <h5 class="review-profile__name">
+                        Воронин
+                      </h5>
+                      <div class="review-profile__car">Kia Rio</div>
+                    </div>
+                  </div>
+                  <div class="review__info">
+                    <div class="review__rating">
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                    </div>
+                    <time class="review__timestamp">
+                      20 июня 2022
+                    </time>
+                  </div>
+                  <p class="review__text">
+                    Не первый раз обращаюсь в центр, меня устраивает ценовая политика и качество оказанных услуг,
+                    благодаря им
+                    легко
+                    избавился от внешних недочётов после дтп. В прошлом году авария серьезная была, думал не соберут, но
+                    сделали ремонт
+                    хорошо.
+                  </p>
+                  <div class="review__menu">
+                    <a href="#" class="review__menu-btn">оставить отзыв</a>
+                    <a href="#" class="review__menu-btn review__menu-btn--outline">отзывы на яндекс</a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="reviews-section__swiper-menu">
-              <button type="button" class="reviews-section__swiper-prev-btn">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 8L12 16L20 24" stroke="#131624" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
+            <div class="swiper-slide">
+              <div class="reviews-section__content">
+                <div class="reviews-section__example">
+                  <div class="review-section__example-wrapper">
+                    <span class="review-section__example-price">До ремонта</span>
+                    <img src="./assets/img/img-before.jpg" alt=""
+                      class="reviews-section__example-img reviews-section__example-img--before">
+                  </div>
+                  <div class="review-section__example-wrapper">
+                    <span class="review-section__example-price">После ремонта</span>
+                    <img src="./assets/img/img-before.jpg" alt=""
+                      class="reviews-section__example-img reviews-section__example-img--after">
+                  </div>
 
-              </button>
-              <div class="swiper-pagination review-section__swiper-pagination"></div>
-              <button type="button" class="reviews-section__swiper-next-btn">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 24L20 16L12 8" stroke="#131624" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
 
-              </button>
+
+                </div>
+                <div class="review review-section__review">
+                  <div class="review-profile review__profile">
+                    <img src="./assets/img/review-avatar.jpg" alt="" class="review-profile__avatar">
+                    <div class="review-profile__body">
+                      <h5 class="review-profile__name">
+                        Воронин
+                      </h5>
+                      <div class="review-profile__car">Kia Rio</div>
+                    </div>
+                  </div>
+                  <div class="review__info">
+                    <div class="review__rating">
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                    </div>
+                    <time class="review__timestamp">
+                      20 июня 2022
+                    </time>
+                  </div>
+                  <p class="review__text">
+                    Не первый раз обращаюсь в центр, меня устраивает ценовая политика и качество оказанных услуг,
+                    благодаря им
+                    легко
+                    избавился от внешних недочётов после дтп. В прошлом году авария серьезная была, думал не соберут, но
+                    сделали ремонт
+                    хорошо.
+                  </p>
+                  <div class="review__menu">
+                    <a href="#" class="review__menu-btn">оставить отзыв</a>
+                    <a href="#" class="review__menu-btn review__menu-btn--outline">отзывы на яндекс</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-section__content">
+                <div class="reviews-section__example">
+                  <div class="review-section__example-wrapper">
+                    <span class="review-section__example-price">До ремонта</span>
+                    <img src="./assets/img/img-before.jpg" alt=""
+                      class="reviews-section__example-img reviews-section__example-img--before">
+                  </div>
+                  <div class="review-section__example-wrapper">
+                    <span class="review-section__example-price">После ремонта</span>
+                    <img src="./assets/img/img-before.jpg" alt=""
+                      class="reviews-section__example-img reviews-section__example-img--after">
+                  </div>
+
+
+
+                </div>
+                <div class="review review-section__review">
+                  <div class="review-profile review__profile">
+                    <img src="./assets/img/review-avatar.jpg" alt="" class="review-profile__avatar">
+                    <div class="review-profile__body">
+                      <h5 class="review-profile__name">
+                        Воронин
+                      </h5>
+                      <div class="review-profile__car">Kia Rio</div>
+                    </div>
+                  </div>
+                  <div class="review__info">
+                    <div class="review__rating">
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                    </div>
+                    <time class="review__timestamp">
+                      20 июня 2022
+                    </time>
+                  </div>
+                  <p class="review__text">
+                    Не первый раз обращаюсь в центр, меня устраивает ценовая политика и качество оказанных услуг,
+                    благодаря им
+                    легко
+                    избавился от внешних недочётов после дтп. В прошлом году авария серьезная была, думал не соберут, но
+                    сделали ремонт
+                    хорошо.
+                  </p>
+                  <div class="review__menu">
+                    <a href="#" class="review__menu-btn">оставить отзыв</a>
+                    <a href="#" class="review__menu-btn review__menu-btn--outline">отзывы на яндекс</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-section__content">
+                <div class="reviews-section__example">
+                  <div class="review-section__example-wrapper">
+                    <span class="review-section__example-price">До ремонта</span>
+                    <img src="./assets/img/img-before.jpg" alt=""
+                      class="reviews-section__example-img reviews-section__example-img--before">
+                  </div>
+                  <div class="review-section__example-wrapper">
+                    <span class="review-section__example-price">После ремонта</span>
+                    <img src="./assets/img/img-before.jpg" alt=""
+                      class="reviews-section__example-img reviews-section__example-img--after">
+                  </div>
+
+
+
+                </div>
+                <div class="review review-section__review">
+                  <div class="review-profile review__profile">
+                    <img src="./assets/img/review-avatar.jpg" alt="" class="review-profile__avatar">
+                    <div class="review-profile__body">
+                      <h5 class="review-profile__name">
+                        Воронин
+                      </h5>
+                      <div class="review-profile__car">Kia Rio</div>
+                    </div>
+                  </div>
+                  <div class="review__info">
+                    <div class="review__rating">
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                    </div>
+                    <time class="review__timestamp">
+                      20 июня 2022
+                    </time>
+                  </div>
+                  <p class="review__text">
+                    Не первый раз обращаюсь в центр, меня устраивает ценовая политика и качество оказанных услуг,
+                    благодаря им
+                    легко
+                    избавился от внешних недочётов после дтп. В прошлом году авария серьезная была, думал не соберут, но
+                    сделали ремонт
+                    хорошо.
+                  </p>
+                  <div class="review__menu">
+                    <a href="#" class="review__menu-btn">оставить отзыв</a>
+                    <a href="#" class="review__menu-btn review__menu-btn--outline">отзывы на яндекс</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-section__content">
+                <div class="reviews-section__example">
+                  <div class="review-section__example-wrapper">
+                    <span class="review-section__example-price">До ремонта</span>
+                    <img src="./assets/img/img-before.jpg" alt=""
+                      class="reviews-section__example-img reviews-section__example-img--before">
+                  </div>
+                  <div class="review-section__example-wrapper">
+                    <span class="review-section__example-price">После ремонта</span>
+                    <img src="./assets/img/img-before.jpg" alt=""
+                      class="reviews-section__example-img reviews-section__example-img--after">
+                  </div>
+
+
+
+                </div>
+                <div class="review review-section__review">
+                  <div class="review-profile review__profile">
+                    <img src="./assets/img/review-avatar.jpg" alt="" class="review-profile__avatar">
+                    <div class="review-profile__body">
+                      <h5 class="review-profile__name">
+                        Воронин
+                      </h5>
+                      <div class="review-profile__car">Kia Rio</div>
+                    </div>
+                  </div>
+                  <div class="review__info">
+                    <div class="review__rating">
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                    </div>
+                    <time class="review__timestamp">
+                      20 июня 2022
+                    </time>
+                  </div>
+                  <p class="review__text">
+                    Не первый раз обращаюсь в центр, меня устраивает ценовая политика и качество оказанных услуг,
+                    благодаря им
+                    легко
+                    избавился от внешних недочётов после дтп. В прошлом году авария серьезная была, думал не соберут, но
+                    сделали ремонт
+                    хорошо.
+                  </p>
+                  <div class="review__menu">
+                    <a href="#" class="review__menu-btn">оставить отзыв</a>
+                    <a href="#" class="review__menu-btn review__menu-btn--outline">отзывы на яндекс</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-section__content">
+                <div class="reviews-section__example">
+                  <div class="review-section__example-wrapper">
+                    <span class="review-section__example-price">До ремонта</span>
+                    <img src="./assets/img/img-before.jpg" alt=""
+                      class="reviews-section__example-img reviews-section__example-img--before">
+                  </div>
+                  <div class="review-section__example-wrapper">
+                    <span class="review-section__example-price">После ремонта</span>
+                    <img src="./assets/img/img-before.jpg" alt=""
+                      class="reviews-section__example-img reviews-section__example-img--after">
+                  </div>
+
+
+
+                </div>
+                <div class="review review-section__review">
+                  <div class="review-profile review__profile">
+                    <img src="./assets/img/review-avatar.jpg" alt="" class="review-profile__avatar">
+                    <div class="review-profile__body">
+                      <h5 class="review-profile__name">
+                        Воронин
+                      </h5>
+                      <div class="review-profile__car">Kia Rio</div>
+                    </div>
+                  </div>
+                  <div class="review__info">
+                    <div class="review__rating">
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                      <div class="review__rating-star"></div>
+                    </div>
+                    <time class="review__timestamp">
+                      20 июня 2022
+                    </time>
+                  </div>
+                  <p class="review__text">
+                    Не первый раз обращаюсь в центр, меня устраивает ценовая политика и качество оказанных услуг,
+                    благодаря им
+                    легко
+                    избавился от внешних недочётов после дтп. В прошлом году авария серьезная была, думал не соберут, но
+                    сделали ремонт
+                    хорошо.
+                  </p>
+                  <div class="review__menu">
+                    <a href="#" class="review__menu-btn">оставить отзыв</a>
+                    <a href="#" class="review__menu-btn review__menu-btn--outline">отзывы на яндекс</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="review review-section__review">
-            <div class="review-profile review__profile">
-              <img src="./assets/img/review-avatar.jpg" alt="" class="review-profile__avatar">
-              <div class="review-profile__body">
-                <h5 class="review-profile__name">
-                  Воронин
-                </h5>
-                <div class="review-profile__car">Kia Rio</div>
-              </div>
-            </div>
-            <div class="review__info">
-              <div class="review__rating">
-                <div class="review__rating-star"></div>
-                <div class="review__rating-star"></div>
-                <div class="review__rating-star"></div>
-                <div class="review__rating-star"></div>
-                <div class="review__rating-star"></div>
-              </div>
-              <time class="review__timestamp">
-                20 июня 2022
-              </time>
-            </div>
-            <p class="review__text">
-              Не первый раз обращаюсь в центр, меня устраивает ценовая политика и качество оказанных услуг, благодаря им
-              легко
-              избавился от внешних недочётов после дтп. В прошлом году авария серьезная была, думал не соберут, но
-              сделали ремонт
-              хорошо.
-            </p>
-            <div class="review__menu">
-              <a href="#" class="review__menu-btn">оставить отзыв</a>
-              <a href="#" class="review__menu-btn review__menu-btn--outline">отзывы на яндекс</a>
-            </div>
-          </div>
+        </div>
+
+        <div class="reviews-section__swiper-menu">
+          <button type="button" class="reviews-section__swiper-prev-btn">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 8L12 16L20 24" stroke="#131624" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+          </button>
+          <div class="swiper-pagination review-section__swiper-pagination"></div>
+          <button type="button" class="reviews-section__swiper-next-btn">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 24L20 16L12 8" stroke="#131624" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+          </button>
         </div>
       </div>
     </section>
@@ -1166,7 +1464,7 @@
               <input required type="text" placeholder="Представьтесь пожалуйста" class="footer-mail-form__input">
             </fieldset>
             <fieldset class="footer-mail-form__fieldset">
-              <input required type="tel" value="+7" placeholder="999-999-99-99"
+              <input required type="tel" placeholder="+7-999-999-99-99"
                 class="phone footer-mail-form__input footer-mail-form__input--phone">
             </fieldset>
             <button type="submit" class="footer-mailn-form__submit-btn">Оставить заявку на звонок</button>
@@ -1182,12 +1480,7 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-  <script src="./scripts/swiper.min.js"></script>
-  <script src="./scripts/accordion.js"></script>
-  <script src="./scripts/swiper.js"></script>
-  <script src="./scripts/jquery.mask.js"></script>
-  <script src="./scripts/mask.js"></script>
-  <script src="./scripts/popup.js"></script>
+  <script src="./scripts/app.js"></script>
 </body>
 
 </html>

@@ -1047,13 +1047,36 @@ section:not(:last-child) {
 }
 .price-section__table {
   width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  gap: 4px;
+}
+
+.price-section__table--open {
+  max-height: 100%;
+}
+
+.price-section__table-rows {
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 415px;
+  overflow: hidden;
+  transition: transform 0.4s;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: start;
   gap: 4px;
 }
+.price-section__table-rows--open {
+  max-height: 100%;
+}
+
 .price-section__table-row {
   width: 100%;
+  min-height: 80px;
   background: var(--bg);
   padding: 20px;
   display: flex;
@@ -1703,13 +1726,13 @@ section:not(:last-child) {
 
 .review-section__swiper {
   width: 100%;
-  max-width: 570px;
 }
 
 .reviews-section__swiper-menu {
-  width: 100%;
+  width: auto;
   margin-top: 30px;
-  justify-content: center;
+  justify-content: start;
+  margin-left: 112px;
   display: flex;
   align-items: center;
   gap: 36px;
