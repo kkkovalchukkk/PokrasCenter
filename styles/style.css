@@ -1950,7 +1950,8 @@ section:not(:last-child) {
 }
 .footer-mail-form__input--phone {
 }
-.footer-mailn-form__submit-btn {
+.footer-mailn-form__submit-btn,
+.footer-mail-form__submit-btn {
   padding: 17.5px 0px;
   width: 100%;
   background: #004ea7;
@@ -1965,10 +1966,12 @@ section:not(:last-child) {
   transition: 0.13s;
   cursor: pointer;
 }
-.footer-mailn-form__submit-btn:hover {
+.footer-mailn-form__submit-btn:hover,
+.footer-mail-form__submit-btn:hover {
   background-color: #167ff8;
 }
-.footer-mailn-form__submit-btn:active {
+.footer-mailn-form__submit-btn:active,
+.footer-mail-form__submit-btn:active {
   transform: translateY(2px);
 }
 
