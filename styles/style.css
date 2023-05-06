@@ -1210,6 +1210,7 @@ section:not(:last-child) {
 }
 .req-section__btn {
   padding: 17px 40px;
+  border: none;
   font-family: var(--mainFont);
   font-style: normal;
   font-weight: 700;
