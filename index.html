@@ -64,6 +64,22 @@
       </div>
     </div>
   </div>
+  <div class="menu-window menu-window--hidden" id="menu-window">
+    <div class="side-menu menu-window__side-menu">
+      <div class="side-menu__menu">
+        <div class="side-menu__menu-item side-menu__menu-item--time">
+          <div class="side-menu__menu-item-title">Часы работы:</div>
+          <time class="side-menu__menu-item-text side-menu__menu-item-time">Ежедневно с 9:00 до 21:00</time>
+        </div>
+        <div class="side-menu__menu-item side-menu__menu-item--tel">
+          <div class="side-menu__menu-item-title">Телефон:</div>
+          <a href="tel:+73433845548" class="side-menu__menu-item-text side-menu__menu-item-tel-link">+7(343)
+            384-55-48</a>
+        </div>
+        <button class="side-menu__menu-item-btn" data-caption="Задайте нам вопроc">заказать звонок</button>
+      </div>
+    </div>
+  </div>
   <header class="header">
     <div class="wrapper header__wrapper">
       <a href="#" class="logo-link header__logo-link">
@@ -84,6 +100,12 @@
         </div>
         <button class="header__menu-item-btn" data-caption="Задайте нам вопроc">заказать звонок</button>
       </div>
+      <label for="check" class="header__burger-btn">
+        <input type="checkbox" id="check" class="header__burger-btn-toggler" />
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </label>
     </div>
   </header>
   <main class="main">
@@ -110,28 +132,53 @@
         </div>
         <div class="promo-block-list">
           <div class="promo-block promo-block-list__promo-block promo-block--goal">
-            <h4 class="promo-block__heading">
-              100 %
-            </h4>
-            <p class="promo-block__description">
-              попадание в цвет
-            </p>
+            <div class="promo-block__icon">
+              <svg width="40" height="40">
+                <use xlink:href="./assets/icons/goal-icon.svg#goal"></use>
+              </svg>
+            </div>
+            <div class="promo-block__body">
+              <h4 class="promo-block__heading">
+                100 %
+              </h4>
+              <p class="promo-block__description">
+                попадание в цвет
+              </p>
+            </div>
           </div>
           <div class="promo-block promo-block-list__promo-block promo-block--guarantee">
-            <h4 class="promo-block__heading">
-              3 года гарантии
-            </h4>
-            <p class="promo-block__description">
-              прописаны в договоре
-            </p>
+            <div class="promo-block__icon">
+              <svg width="40" height="40">
+                <use xlink:href="./assets/icons/guarantee-icon.svg#guarantee"></use>
+              </svg>
+            </div>
+
+            <div class="promo-block__body">
+
+              <h4 class="promo-block__heading">
+                3 года гарантии
+              </h4>
+              <p class="promo-block__description">
+                прописаны в договоре
+              </p>
+            </div>
           </div>
           <div class="promo-block promo-block-list__promo-block promo-block--moneytime">
-            <h4 class="promo-block__heading">
-              Платим %
-            </h4>
-            <p class="promo-block__description">
-              за каждый день просрочки
-            </p>
+            <div class="promo-block__icon">
+              <svg width="40" height="40">
+                <use xlink:href="./assets/icons/moneytime-icon.svg#money"></use>
+              </svg>
+            </div>
+
+            <div class="promo-block__body">
+
+              <h4 class="promo-block__heading">
+                Платим %
+              </h4>
+              <p class="promo-block__description">
+                за каждый день просрочки
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -314,7 +361,7 @@
                 <img src="./assets/img/eq-3.jpeg" alt="" class="eq-section__small-circle-img">
               </div>
             </div>
-            <div class="eq-section__photo-row-group">
+            <div class="eq-section__photo-row-group eq-section__photo-row-group--even">
               <img src="./assets/img/eq-4.jpeg" alt="" class="eq-section__small-rect-img">
               <img src="./assets/img/eq-5.jpeg" alt="" class="eq-section__small-rect-img">
             </div>
@@ -323,11 +370,11 @@
         </div>
         <div class="eq-section__row">
           <div class="eq-section__col eq-section__col--photo">
-            <div class="eq-section__photo-row-group">
+            <div class="eq-section__photo-row-group eq-section__photo-row-group--even">
               <img src="./assets/img/eq-6.jpeg" alt="" class="eq-section__circle-img">
               <img src="./assets/img/eq-7.jpeg" alt="" class="eq-section__circle-img">
             </div>
-            <div class="eq-section__photo-row-group">
+            <div class="eq-section__photo-row-group eq-section__photo-row-group--even">
               <img src="./assets/img/eq-8.jpeg" alt="" class="eq-section__circle-img">
               <img src="./assets/img/eq-9.jpeg" alt="" class="eq-section__circle-img">
             </div>

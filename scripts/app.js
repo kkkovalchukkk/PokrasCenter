@@ -4070,6 +4070,10 @@ const serviceCardLinks = document.querySelectorAll(".service-list-card__link");
 const reqSectionBtn = document.querySelector(".req-section__btn--blue");
 const offersPopupToggleBtn = document.querySelectorAll(".footer-mailn-form__submit-btn");
 
+const menuWindow = document.querySelector("#menu-window");
+const burgerBtn = document.querySelector(".header__burger-btn-toggler");
+const popupToggleBurgerBtn = document.querySelector(".side-menu__menu-item-btn");
+
 function offBody() {
   document.body.style.overflow = "hidden";
 }
@@ -4136,6 +4140,22 @@ offersPopupToggleBtn.forEach((btn) => {
     });
     showPopup(null, popupWindow);
   });
+});
+
+burgerBtn.addEventListener("input", (e) => {
+  if (menuWindow.classList.contains("menu-window--hidden")) {
+    menuWindow.classList.remove("menu-window--hidden");
+    offBody();
+  } else {
+    onBody();
+    menuWindow.classList.add("menu-window--hidden");
+  }
+});
+
+popupToggleBurgerBtn.addEventListener("click", () => {
+  menuWindow.classList.add("menu-window--hidden");
+  burgerBtn.checked = false;
+  showPopup(null, popupWindow);
 });
 
 const tables = document.querySelectorAll(".price-section__table-rows");

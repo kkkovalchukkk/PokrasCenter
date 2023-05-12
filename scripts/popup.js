@@ -9,6 +9,9 @@ const cardPopupToggleBtns = document.querySelectorAll(".work-card__btn");
 const promoSectionBtn = document.querySelector(".promo-section__btn");
 const serviceCardLinks = document.querySelectorAll(".service-list-card__link");
 
+const menuWindow = document.querySelector("#menu-window");
+const burgerBtn = document.querySelector(".header__burger-btn");
+
 function offBody() {
   document.body.style.overflow = "hidden";
 }
@@ -62,3 +65,8 @@ serviceCardLinks.forEach((link) =>
     showPopup(e, popupWindow);
   })
 );
+
+burgerBtn.addEventListener("click", () => {
+  
+  menuWindow.classList.remove("menu-window--hidden");
+});
