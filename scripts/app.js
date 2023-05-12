@@ -4026,6 +4026,9 @@
 });
 //# sourceMappingURL=swiper-bundle.min.js.map
 
+
+// Main Script 
+
 window.addEventListener("DOMContentLoaded", () => {
   const accordionMenu = document.querySelector(".question-section__accordion-menu");
   const accordionMenuItem = document.querySelectorAll(".question-section__accordion-item");
@@ -4033,6 +4036,10 @@ window.addEventListener("DOMContentLoaded", () => {
   accordionMenuItem.forEach((item) => {
     item.addEventListener("click", () => {
       const classname = "question-section__accordion-item--opened";
+      if (item.classList.contains(classname)) {
+      item.classList.remove(classname);
+        return;
+      }
       document.querySelector("." + classname)?.classList.remove(classname);
       item.classList.add(classname);
     });
