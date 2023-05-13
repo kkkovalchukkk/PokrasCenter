@@ -642,6 +642,7 @@ section:not(:last-child) {
   justify-content: start;
 }
 .eq-section__col--dark {
+  max-width: 570px;
   padding: 70px 40px;
   background-color: #131624;
 }
@@ -676,6 +677,7 @@ section:not(:last-child) {
 }
 
 .eq-list-item__text {
+  max-width: 430px;
   font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -755,11 +757,15 @@ section:not(:last-child) {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-rows: 1fr;
 }
 
 .service-list-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
   width: 100%;
   background: #f9faff;
   transition: 0.13s;
@@ -775,19 +781,20 @@ section:not(:last-child) {
   color: #f9faff;
 }
 
-.service-list-card:hover .service-list-card__body::after {
+.service-list-card:hover:after {
   transform: translateX(0%);
 }
 .service-list-card__body {
-  position: relative;
-  padding: 20px;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: start;
+  position: relative;
+  padding: 20px;
 }
 
-.service-list-card__body::after {
+.service-list-card::after {
   content: "";
   width: 100%;
   height: 8px;
@@ -846,6 +853,7 @@ section:not(:last-child) {
   color: #131624;
 }
 .service-list-card__link {
+  margin-top: 20px;
   position: relative;
   margin-top: auto;
   font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -944,6 +952,10 @@ section:not(:last-child) {
 }
 .work-card {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
   background-color: #fff;
 }
 
@@ -966,6 +978,8 @@ section:not(:last-child) {
 }
 
 .work-card__body {
+  width: 100%;
+  flex-grow: 1;
   padding: 15px;
 }
 
@@ -1233,6 +1247,7 @@ section:not(:last-child) {
   color: #131624;
 }
 .price-section__table-row-subheading {
+  max-width: 415px;
   font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2276,6 +2291,7 @@ section:not(:last-child) {
   height: min-content;
 }
 .popup-window__popup-heading {
+  max-width: 464px;
   margin-bottom: 15px;
   font-family: "Montserrat";
   font-style: normal;
