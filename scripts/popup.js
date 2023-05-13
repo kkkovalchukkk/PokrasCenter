@@ -8,9 +8,12 @@ const classNamePopupWindowHidden = "popup-window--hidden";
 const cardPopupToggleBtns = document.querySelectorAll(".work-card__btn");
 const promoSectionBtn = document.querySelector(".promo-section__btn");
 const serviceCardLinks = document.querySelectorAll(".service-list-card__link");
+const reqSectionBtn = document.querySelector(".req-section__btn--blue");
+const offersPopupToggleBtn = document.querySelectorAll(".footer-mailn-form__submit-btn");
 
 const menuWindow = document.querySelector("#menu-window");
-const burgerBtn = document.querySelector(".header__burger-btn");
+const burgerBtn = document.querySelector(".header__burger-btn-toggler");
+const popupToggleBurgerBtn = document.querySelector(".side-menu__menu-item-btn");
 
 function offBody() {
   document.body.style.overflow = "hidden";
@@ -21,7 +24,7 @@ function onBody() {
 }
 
 function showPopup(e, popup) {
-  if (e.target.dataset.caption) {
+  if (e && e.target.dataset.caption) {
     popupHeading.textContent = e.target.dataset.caption;
   } else {
     popupHeading.textContent = "Задайте нам вопрос";
@@ -55,18 +58,43 @@ popupTogglerBtn.addEventListener("click", (e) => showPopup(e, popupWindow));
 
 promoSectionBtn.addEventListener("click", (e) => showPopup(e, popupWindow));
 
+reqSectionBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  showPopup(null, popupWindow);
+});
+
 closePopupBtns.forEach((btn) => btn.addEventListener("click", (e) => hidePopup(e.target.closest(".popup-window"))));
 
-cardPopupToggleBtns.forEach((btn) => btn.addEventListener("click", () => showPopup(popupWindowCase)));
+cardPopupToggleBtns.forEach((btn) => btn.addEventListener("click", (e) => showPopup(e, popupWindowCase)));
 
 serviceCardLinks.forEach((link) =>
   link.addEventListener("click", (e) => {
     e.preventDefault();
-    showPopup(e, popupWindow);
+    showPopup(null, popupWindowCase);
   })
 );
 
-burgerBtn.addEventListener("click", () => {
-  
-  menuWindow.classList.remove("menu-window--hidden");
+offersPopupToggleBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".popup-window").forEach((popup) => {
+      hidePopup(popup);
+    });
+    showPopup(null, popupWindow);
+  });
+});
+
+burgerBtn.addEventListener("input", (e) => {
+  if (menuWindow.classList.contains("menu-window--hidden")) {
+    menuWindow.classList.remove("menu-window--hidden");
+    offBody();
+  } else {
+    onBody();
+    menuWindow.classList.add("menu-window--hidden");
+  }
+});
+
+popupToggleBurgerBtn.addEventListener("click", () => {
+  menuWindow.classList.add("menu-window--hidden");
+  burgerBtn.checked = false;
+  showPopup(null, popupWindow);
 });
